@@ -1,81 +1,117 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
 }
 
 body{
-    background:#0f1115;
-    color:#fff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    padding:20px;
+background:#0b0f17;
+color:#fff;
+display:flex;
+justify-content:center;
+padding:30px 15px;
 }
 
-.container{
-    width:100%;
-    max-width:420px;
-    background:#181b22;
-    border-radius:24px;
-    padding:24px;
-    box-shadow:0 10px 30px rgba(0,0,0,.35);
+.app{
+width:100%;
+max-width:430px;
 }
 
-h1{
-    text-align:center;
-    margin-bottom:8px;
+header{
+text-align:center;
+margin-bottom:25px;
 }
 
-.subtitulo{
-    text-align:center;
-    color:#9ca3af;
-    margin-bottom:25px;
-    font-size:14px;
+.logo{
+width:80px;
+height:80px;
+margin:auto;
+border-radius:24px;
+background:#2563eb;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:38px;
+box-shadow:0 10px 30px rgba(37,99,235,.35);
+margin-bottom:15px;
+}
+
+header h1{
+font-size:34px;
+font-weight:800;
+}
+
+header p{
+margin-top:8px;
+color:#94a3b8;
+}
+
+.card{
+background:#151b26;
+padding:22px;
+border-radius:22px;
+margin-bottom:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+label{
+display:block;
+margin-bottom:8px;
+margin-top:15px;
+font-weight:600;
 }
 
 input,
 textarea{
-    width:100%;
-    padding:16px;
-    border:none;
-    border-radius:14px;
-    background:#242933;
-    color:white;
-    margin-bottom:16px;
-    font-size:16px;
-    outline:none;
+width:100%;
+background:#222b3a;
+border:none;
+border-radius:14px;
+padding:16px;
+color:white;
+font-size:16px;
+outline:none;
 }
 
 textarea{
-    height:170px;
-    resize:none;
+height:180px;
+resize:none;
+margin-top:15px;
+margin-bottom:15px;
 }
 
 button{
-    width:100%;
-    padding:16px;
-    border:none;
-    border-radius:14px;
-    background:#2563eb;
-    color:white;
-    font-size:17px;
-    font-weight:600;
-    margin-bottom:12px;
-    cursor:pointer;
-    transition:.2s;
+width:100%;
+padding:17px;
+border:none;
+border-radius:14px;
+font-size:16px;
+font-weight:700;
+cursor:pointer;
+margin-top:15px;
+transition:.2s;
 }
 
 button:active{
-    transform:scale(.98);
+transform:scale(.98);
+}
+
+#gerar{
+background:#2563eb;
+color:white;
 }
 
 #copiar{
-    background:#16a34a;
+background:#16a34a;
+color:white;
 }
 
 #whatsapp{
-    background:#25D366;
+background:#25D366;
+color:white;
+}
+
+h2{
+margin-bottom:15px;
 }

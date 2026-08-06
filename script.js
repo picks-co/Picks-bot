@@ -15,18 +15,18 @@ btnGerar.addEventListener("click", () => {
         return;
     }
 
-    const mensagem = `🔥 ACHADO DO DIA
+const mensagem = `🔥 ACHADO DO DIA
 
-💰 Preço: R$ ${preco.value}
+👕 ${nome.value}
+
+💰 R$ ${preco.value}
 
 🆔 ID: ${id.value}
 
-🛒 COMPRE AQUI
+🛒 Compre aqui:
 ${link.value}
 
 ━━━━━━━━━━━━━━
-
-🔥 Corre antes que acabe!
 
 🚀 Picks`;
 

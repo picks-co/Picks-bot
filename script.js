@@ -5,6 +5,7 @@ const btnWhats = document.getElementById("whatsapp");
 const link = document.getElementById("link");
 const preco = document.getElementById("preco");
 const id = document.getElementById("idProduto");
+const nome = document.getElementById("nomeProduto");
 const resultado = document.getElementById("resultado");
 
 btnGerar.addEventListener("click", () => {

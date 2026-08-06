@@ -4,21 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Picks Bot</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>🚀 Picks Bot</h1>
-  <p>Ferramenta para gerar posts de afiliados da SHEIN.</p>
 
-  <input
-    type="text"
-    placeholder="Cole aqui o link da SHEIN"
-    style="width:100%;padding:12px;margin-top:15px;"
-  >
+  <div class="container">
 
-  <br><br>
+    <h1>🚀 Picks Bot</h1>
 
-  <button style="padding:12px 20px;">
-    Gerar postagem
-  </button>
+    <p class="subtitulo">
+      Gerador de postagens para afiliados da SHEIN
+    </p>
+
+    <input
+      id="link"
+      type="text"
+      placeholder="Cole o link da SHEIN"
+    >
+
+    <input
+      id="preco"
+      type="text"
+      placeholder="Preço"
+    >
+
+    <input
+      id="idProduto"
+      type="text"
+      placeholder="ID do produto"
+    >
+
+    <button id="gerar">
+      Gerar postagem
+    </button>
+
+    <textarea
+      id="resultado"
+      placeholder="Sua postagem aparecerá aqui..."
+      readonly
+    ></textarea>
+
+    <button id="copiar">
+      Copiar mensagem
+    </button>
+
+    <button id="whatsapp">
+      Abrir WhatsApp
+    </button>
+
+  </div>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
+

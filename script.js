@@ -1,42 +1,60 @@
-document.getElementById("gerar").addEventListener("click", function () {
+const btnGerar = document.getElementById("gerar");
+const btnCopiar = document.getElementById("copiar");
+const btnWhats = document.getElementById("whatsapp");
 
-    const link = document.getElementById("link").value;
-    const preco = document.getElementById("preco").value;
-    const id = document.getElementById("idProduto").value;
+const link = document.getElementById("link");
+const preco = document.getElementById("preco");
+const id = document.getElementById("idProduto");
+const resultado = document.getElementById("resultado");
 
-    const mensagem =
-`🔥 ACHADO SHEIN
+btnGerar.addEventListener("click", () => {
 
-💰 Preço: R$ ${preco}
+    if(link.value.trim() === "" || preco.value.trim() === "" || id.value.trim() === ""){
+        alert("Preencha todos os campos.");
+        return;
+    }
 
-🆔 ID: ${id}
+    const mensagem = `🔥 ACHADO PICKS
 
-🛍️ Compre aqui:
-${link}`;
+💰 Preço: R$ ${preco.value}
 
-    document.getElementById("resultado").value = mensagem;
+🆔 ID: ${id.value}
+
+🛒 Link:
+${link.value}
+
+━━━━━━━━━━━━━━
+
+🚀 Picks Bot`;
+
+    resultado.value = mensagem;
 
 });
 
-document.getElementById("copiar").addEventListener("click", function () {
+btnCopiar.addEventListener("click", async () => {
 
-    const texto = document.getElementById("resultado");
+    if(resultado.value === ""){
+        alert("Gere uma postagem primeiro.");
+        return;
+    }
 
-    texto.select();
-    document.execCommand("copy");
+    await navigator.clipboard.writeText(resultado.value);
 
     alert("Mensagem copiada!");
 
 });
 
-document.getElementById("whatsapp").addEventListener("click", function () {
+btnWhats.addEventListener("click", () => {
 
-    const texto = encodeURIComponent(
-        document.getElementById("resultado").value
-    );
+    if(resultado.value === ""){
+        alert("Gere uma postagem primeiro.");
+        return;
+    }
+
+    const texto = encodeURIComponent(resultado.value);
 
     window.open(
-        "https://wa.me/?text=" + texto,
+        `https://wa.me/?text=${texto}`,
         "_blank"
     );
 

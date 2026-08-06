@@ -1,63 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Picks Bot</title>
 
-  <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picks Bot</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <div class="container">
+<div class="app">
 
-    <h1>🚀 Picks Bot</h1>
+    <header>
 
-    <p class="subtitulo">
-      Gerador de postagens para afiliados da SHEIN
-    </p>
+        <div class="logo">
+            🚀
+        </div>
 
-    <input
-      id="link"
-      type="text"
-      placeholder="Cole o link da SHEIN"
-    >
+        <h1>Picks Bot</h1>
 
-    <input
-      id="preco"
-      type="text"
-      placeholder="Preço"
-    >
+        <p>Transformando links em vendas</p>
 
-    <input
-      id="idProduto"
-      type="text"
-      placeholder="ID do produto"
-    >
+    </header>
 
-    <button id="gerar">
-      Gerar postagem
-    </button>
+    <main>
 
-    <textarea
-      id="resultado"
-      placeholder="Sua postagem aparecerá aqui..."
-      readonly
-    ></textarea>
+        <div class="card">
 
-    <button id="copiar">
-      Copiar mensagem
-    </button>
+            <label>🔗 Link da SHEIN</label>
+            <input id="link" type="text" placeholder="Cole aqui o link">
 
-    <button id="whatsapp">
-      Abrir WhatsApp
-    </button>
+            <label>💰 Preço</label>
+            <input id="preco" type="text" placeholder="Ex: 79,90">
 
-  </div>
+            <label>🆔 ID do Produto</label>
+            <input id="idProduto" type="text" placeholder="Ex: 48291573">
 
-  <script src="script.js"></script>
+            <button id="gerar">
+                🚀 Gerar Postagem
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Resultado</h2>
+
+            <textarea
+                id="resultado"
+                readonly
+                placeholder="Sua postagem aparecerá aqui..."
+            ></textarea>
+
+            <button id="copiar">
+                📋 Copiar Mensagem
+            </button>
+
+            <button id="whatsapp">
+                💬 Abrir WhatsApp
+            </button>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
-
